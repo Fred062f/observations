@@ -4000,3 +4000,226 @@ let data = `[
 \t\t"longitude" : 9.84448
 \t}
 ]`;
+let observations = `[
+\t{
+\t\t"COUNT(*)" : 35,
+\t\t"YEAR(datetime)" : 0
+\t},
+\t{
+\t\t"COUNT(*)" : 4,
+\t\t"YEAR(datetime)" : 1970
+\t},
+\t{
+\t\t"COUNT(*)" : 3,
+\t\t"YEAR(datetime)" : 1971
+\t},
+\t{
+\t\t"COUNT(*)" : 1,
+\t\t"YEAR(datetime)" : 1972
+\t},
+\t{
+\t\t"COUNT(*)" : 7,
+\t\t"YEAR(datetime)" : 1973
+\t},
+\t{
+\t\t"COUNT(*)" : 6,
+\t\t"YEAR(datetime)" : 1974
+\t},
+\t{
+\t\t"COUNT(*)" : 8,
+\t\t"YEAR(datetime)" : 1975
+\t},
+\t{
+\t\t"COUNT(*)" : 8,
+\t\t"YEAR(datetime)" : 1976
+\t},
+\t{
+\t\t"COUNT(*)" : 2,
+\t\t"YEAR(datetime)" : 1977
+\t},
+\t{
+\t\t"COUNT(*)" : 6,
+\t\t"YEAR(datetime)" : 1978
+\t},
+\t{
+\t\t"COUNT(*)" : 13,
+\t\t"YEAR(datetime)" : 1979
+\t},
+\t{
+\t\t"COUNT(*)" : 11,
+\t\t"YEAR(datetime)" : 1980
+\t},
+\t{
+\t\t"COUNT(*)" : 4,
+\t\t"YEAR(datetime)" : 1981
+\t},
+\t{
+\t\t"COUNT(*)" : 11,
+\t\t"YEAR(datetime)" : 1982
+\t},
+\t{
+\t\t"COUNT(*)" : 8,
+\t\t"YEAR(datetime)" : 1983
+\t},
+\t{
+\t\t"COUNT(*)" : 7,
+\t\t"YEAR(datetime)" : 1984
+\t},
+\t{
+\t\t"COUNT(*)" : 9,
+\t\t"YEAR(datetime)" : 1985
+\t},
+\t{
+\t\t"COUNT(*)" : 8,
+\t\t"YEAR(datetime)" : 1986
+\t},
+\t{
+\t\t"COUNT(*)" : 4,
+\t\t"YEAR(datetime)" : 1987
+\t},
+\t{
+\t\t"COUNT(*)" : 5,
+\t\t"YEAR(datetime)" : 1988
+\t},
+\t{
+\t\t"COUNT(*)" : 10,
+\t\t"YEAR(datetime)" : 1989
+\t},
+\t{
+\t\t"COUNT(*)" : 10,
+\t\t"YEAR(datetime)" : 1990
+\t},
+\t{
+\t\t"COUNT(*)" : 4,
+\t\t"YEAR(datetime)" : 1991
+\t},
+\t{
+\t\t"COUNT(*)" : 10,
+\t\t"YEAR(datetime)" : 1992
+\t},
+\t{
+\t\t"COUNT(*)" : 11,
+\t\t"YEAR(datetime)" : 1993
+\t},
+\t{
+\t\t"COUNT(*)" : 10,
+\t\t"YEAR(datetime)" : 1994
+\t},
+\t{
+\t\t"COUNT(*)" : 27,
+\t\t"YEAR(datetime)" : 1995
+\t},
+\t{
+\t\t"COUNT(*)" : 137,
+\t\t"YEAR(datetime)" : 1996
+\t},
+\t{
+\t\t"COUNT(*)" : 256,
+\t\t"YEAR(datetime)" : 1997
+\t},
+\t{
+\t\t"COUNT(*)" : 170,
+\t\t"YEAR(datetime)" : 1998
+\t},
+\t{
+\t\t"COUNT(*)" : 117,
+\t\t"YEAR(datetime)" : 1999
+\t},
+\t{
+\t\t"COUNT(*)" : 154,
+\t\t"YEAR(datetime)" : 2000
+\t},
+\t{
+\t\t"COUNT(*)" : 123,
+\t\t"YEAR(datetime)" : 2001
+\t},
+\t{
+\t\t"COUNT(*)" : 94,
+\t\t"YEAR(datetime)" : 2002
+\t},
+\t{
+\t\t"COUNT(*)" : 131,
+\t\t"YEAR(datetime)" : 2003
+\t},
+\t{
+\t\t"COUNT(*)" : 99,
+\t\t"YEAR(datetime)" : 2004
+\t},
+\t{
+\t\t"COUNT(*)" : 103,
+\t\t"YEAR(datetime)" : 2005
+\t},
+\t{
+\t\t"COUNT(*)" : 100,
+\t\t"YEAR(datetime)" : 2006
+\t},
+\t{
+\t\t"COUNT(*)" : 198,
+\t\t"YEAR(datetime)" : 2007
+\t},
+\t{
+\t\t"COUNT(*)" : 302,
+\t\t"YEAR(datetime)" : 2008
+\t},
+\t{
+\t\t"COUNT(*)" : 378,
+\t\t"YEAR(datetime)" : 2009
+\t},
+\t{
+\t\t"COUNT(*)" : 241,
+\t\t"YEAR(datetime)" : 2010
+\t},
+\t{
+\t\t"COUNT(*)" : 232,
+\t\t"YEAR(datetime)" : 2011
+\t},
+\t{
+\t\t"COUNT(*)" : 262,
+\t\t"YEAR(datetime)" : 2012
+\t},
+\t{
+\t\t"COUNT(*)" : 202,
+\t\t"YEAR(datetime)" : 2013
+\t},
+\t{
+\t\t"COUNT(*)" : 132,
+\t\t"YEAR(datetime)" : 2014
+\t},
+\t{
+\t\t"COUNT(*)" : 130,
+\t\t"YEAR(datetime)" : 2015
+\t},
+\t{
+\t\t"COUNT(*)" : 91,
+\t\t"YEAR(datetime)" : 2016
+\t},
+\t{
+\t\t"COUNT(*)" : 95,
+\t\t"YEAR(datetime)" : 2017
+\t},
+\t{
+\t\t"COUNT(*)" : 75,
+\t\t"YEAR(datetime)" : 2018
+\t},
+\t{
+\t\t"COUNT(*)" : 74,
+\t\t"YEAR(datetime)" : 2019
+\t},
+\t{
+\t\t"COUNT(*)" : 83,
+\t\t"YEAR(datetime)" : 2020
+\t},
+\t{
+\t\t"COUNT(*)" : 87,
+\t\t"YEAR(datetime)" : 2021
+\t},
+\t{
+\t\t"COUNT(*)" : 88,
+\t\t"YEAR(datetime)" : 2022
+\t},
+\t{
+\t\t"COUNT(*)" : 50,
+\t\t"YEAR(datetime)" : 2023
+\t}
+]
+`;

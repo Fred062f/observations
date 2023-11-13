@@ -17,3 +17,33 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 for (let sights of data) {
     L.marker([sights.latitude, sights.longitude],{icon: ufo}).addTo(map);
 }
+
+//observations chart
+observations = JSON.parse(observations);
+
+const labels = observations.map(entry => entry["YEAR(datetime)"]);
+const counts = observations.map(entry => entry["COUNT(*)"]);
+
+const ctx = document.getElementById('myChart');
+
+new Chart(ctx, {
+    type: 'line',
+    data: {
+        labels: labels,
+        datasets: [{
+            label: '# of Observations',
+            data: counts,
+            borderWidth: 1
+        }]
+    },
+    options: {
+        scales: {
+            y: {
+                beginAtZero: true
+            }
+        },
+        legend: {
+            reverse: false
+        },
+    }
+});
