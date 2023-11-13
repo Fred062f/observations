@@ -39,11 +39,22 @@ new Chart(ctx, {
     options: {
         scales: {
             y: {
-                beginAtZero: true
+                beginAtZero: true,
             }
         },
         legend: {
             reverse: false
+        },
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+            legend: {
+                position: "bottom"
+            },
+            title: {
+                display: true,
+                text: "Ufo Observations Over Time",
+            }
         },
     }
 });
