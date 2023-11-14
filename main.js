@@ -59,3 +59,20 @@ new Chart(ctx, {
         },
     }
 });
+
+//Witnesses number animation
+function animateWitnesses(obj, start, end, duration) {
+    let startTimestamp = null;
+    const step = (timestamp) => {
+        if (!startTimestamp) startTimestamp = timestamp;
+        const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+        obj.innerHTML = Math.floor(progress * (end - start) + start);
+        if (progress < 1) {
+            window.requestAnimationFrame(step);
+        }
+    };
+    window.requestAnimationFrame(step);
+}
+
+const obj = document.querySelector(".witnesses");
+animateWitnesses(obj, 0, 8805, 3000);
