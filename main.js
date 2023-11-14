@@ -18,6 +18,7 @@ for (let sights of data) {
     L.marker([sights.latitude, sights.longitude],{icon: ufo}).addTo(map);
 }
 
+
 //observations chart
 observations = JSON.parse(observations);
 
@@ -26,7 +27,7 @@ const counts = observations.map(entry => entry["COUNT(*)"]);
 
 const ctx = document.getElementById('myChart');
 
-const chart = new Chart(ctx, {
+new Chart(ctx, {
     type: 'line',
     data: {
         labels: labels,
@@ -40,15 +41,10 @@ const chart = new Chart(ctx, {
         scales: {
             y: {
                 beginAtZero: true,
-                grid: {
-                    display: false
-                }
-            },
-            x: {
-                grid: {
-                    display: false
-                }
             }
+        },
+        legend: {
+            reverse: false
         },
         responsive: true,
         maintainAspectRatio: false,
@@ -75,3 +71,20 @@ ctx.addEventListener("click", (event) => {
         alert(`Number of Observations: ${clickedData}`);
     }
 });
+
+//Witnesses number animation
+function animateWitnesses(obj, start, end, duration) {
+    let startTimestamp = null;
+    const step = (timestamp) => {
+        if (!startTimestamp) startTimestamp = timestamp;
+        const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+        obj.innerHTML = Math.floor(progress * (end - start) + start);
+        if (progress < 1) {
+            window.requestAnimationFrame(step);
+        }
+    };
+    window.requestAnimationFrame(step);
+}
+
+const obj = document.querySelector(".witnesses");
+animateWitnesses(obj, 0, 8805, 3000);
