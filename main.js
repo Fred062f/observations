@@ -27,7 +27,7 @@ const counts = observations.map(entry => entry["COUNT(*)"]);
 
 const ctx = document.getElementById('myChart');
 
-new Chart(ctx, {
+const chart = new Chart(ctx, {
     type: 'line',
     data: {
         labels: labels,
