@@ -46,8 +46,9 @@ body {
 .title {
     display:flex;
     justify-content: center;
-    font-size: 65px;
+    font-size: 100px;
     color: white;
+    margin-top: 300px;
 }
 
 .witnesses-div {
