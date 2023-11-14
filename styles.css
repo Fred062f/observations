@@ -50,6 +50,8 @@ body {
 .witnesses {
     font-style: italic;
     font-size: 150px;
+    color: firebrick;
+    text-decoration: underline;
 }
 .witnesses-text {
     font-style: italic;
