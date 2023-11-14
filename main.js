@@ -1,6 +1,8 @@
 // P5.JS background
 function setup() {
-    const myCanvas = createCanvas(window.innerWidth, window.innerHeight);
+    canvas = createCanvas(window.innerWidth, window.innerHeight);
+    canvas.position(0, 0)
+    canvas.style('z-index', '-1')
     background(0);
     frameRate(1);
 }
