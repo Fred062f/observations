@@ -1,6 +1,20 @@
-data = JSON.parse(data)
+// P5.JS background
+function setup() {
+    const myCanvas = createCanvas(window.innerWidth, window.innerHeight);
+    background(0);
+    frameRate(1);
+}
 
-console.log(data)
+function draw() {
+    var x = random(windowWidth);
+    var y = random(windowHeight);
+    noStroke();
+    fill(255);
+    ellipse(x, y, 2, 2);
+}
+
+// Get data
+data = JSON.parse(data)
 
 const map = L.map('map').setView([56, 10], 6);
 
