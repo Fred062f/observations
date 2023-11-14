@@ -4135,3 +4135,54 @@ let observations = `[
 \t}
 ]
 `;
+let monthlyObservations = `[
+\t{
+\t\t"MONTH(datetime)" : 1,
+\t\t"COUNT(*)" : 542
+\t},
+\t{
+\t\t"MONTH(datetime)" : 2,
+\t\t"COUNT(*)" : 344
+\t},
+\t{
+\t\t"MONTH(datetime)" : 3,
+\t\t"COUNT(*)" : 337
+\t},
+\t{
+\t\t"MONTH(datetime)" : 4,
+\t\t"COUNT(*)" : 316
+\t},
+\t{
+\t\t"MONTH(datetime)" : 5,
+\t\t"COUNT(*)" : 351
+\t},
+\t{
+\t\t"MONTH(datetime)" : 6,
+\t\t"COUNT(*)" : 323
+\t},
+\t{
+\t\t"MONTH(datetime)" : 7,
+\t\t"COUNT(*)" : 452
+\t},
+\t{
+\t\t"MONTH(datetime)" : 8,
+\t\t"COUNT(*)" : 494
+\t},
+\t{
+\t\t"MONTH(datetime)" : 9,
+\t\t"COUNT(*)" : 316
+\t},
+\t{
+\t\t"MONTH(datetime)" : 10,
+\t\t"COUNT(*)" : 294
+\t},
+\t{
+\t\t"MONTH(datetime)" : 11,
+\t\t"COUNT(*)" : 310
+\t},
+\t{
+\t\t"MONTH(datetime)" : 12,
+\t\t"COUNT(*)" : 332
+\t}
+]
+`
