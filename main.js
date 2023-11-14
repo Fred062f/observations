@@ -18,6 +18,7 @@ for (let sights of data) {
     L.marker([sights.latitude, sights.longitude],{icon: ufo}).addTo(map);
 }
 
+
 //observations chart
 observations = JSON.parse(observations);
 

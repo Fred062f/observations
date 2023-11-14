@@ -42,3 +42,16 @@ body {
     width: 800px;
     height:600px;
 }
+.witnesses-div {
+    display: flex;
+    justify-content: flex-end;
+    width: 500px;
+}
+.witnesses {
+    font-style: italic;
+    font-size: 150px;
+}
+.witnesses-text {
+    font-style: italic;
+    font-size: 50px;
+}
