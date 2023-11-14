@@ -18,7 +18,6 @@ for (let sights of data) {
     L.marker([sights.latitude, sights.longitude],{icon: ufo}).addTo(map);
 }
 
-
 //observations chart
 observations = JSON.parse(observations);
 
@@ -27,7 +26,7 @@ const counts = observations.map(entry => entry["COUNT(*)"]);
 
 const ctx = document.getElementById('myChart');
 
-new Chart(ctx, {
+const chart = new Chart(ctx, {
     type: 'line',
     data: {
         labels: labels,
@@ -41,10 +40,15 @@ new Chart(ctx, {
         scales: {
             y: {
                 beginAtZero: true,
+                grid: {
+                    display: false
+                }
+            },
+            x: {
+                grid: {
+                    display: false
+                }
             }
-        },
-        legend: {
-            reverse: false
         },
         responsive: true,
         maintainAspectRatio: false,
@@ -57,5 +61,17 @@ new Chart(ctx, {
                 text: "Ufo Observations Over Time",
             }
         },
+    }
+});
+ctx.addEventListener("click", (event) => {
+    const clickedPoint = chart.getElementsAtEventForMode(event, "point", { intersect: true });
+    const datapoint = chart.data.datasets[0].data
+
+    if (clickedPoint.length > 0) {
+        const index = clickedPoint[0].index;
+
+        const clickedData = datapoint[index];
+
+        alert(`Number of Observations: ${clickedData}`);
     }
 });
