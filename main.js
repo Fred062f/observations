@@ -105,3 +105,33 @@ function animateWitnesses(obj, start, end, duration) {
 
 const obj = document.querySelector(".witnesses");
 animateWitnesses(obj, 0, 8805, 3000);
+
+//Månedlige observationer barchart
+monthlyObservations = JSON.parse(monthlyObservations);
+
+const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+const months = monthlyObservations.map(entry => monthNames[entry["MONTH(datetime)"] -1]);
+const observationCount = monthlyObservations.map(entry => entry["COUNT(*)"]);
+
+const monthlyObservationsCtx = document.querySelector('#monthlyObservationsChart').getContext('2d');
+
+const monthlyObservationsBarChart = new Chart(monthlyObservationsCtx, {
+    type: "bar",
+    data: {
+        labels: months,
+        datasets: [{
+            label: 'Observation Count',
+            data: observationCount,
+            backgroundColor: 'rgba(54, 162, 235, 0.2)', // Customizable color
+            borderColor: 'rgba(54, 162, 235, 1)', // Customizable color
+            borderWidth: 1
+        }]
+    },
+    options: {
+        scales: {
+            y: {
+                beginAtZero: true
+            }
+        }
+    }
+});
