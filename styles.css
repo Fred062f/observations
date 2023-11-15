@@ -2,6 +2,7 @@ html,
 body {
     height: 100%;
     margin: 0;
+    scroll-behavior: smooth;
 }
 .leaflet-container {
     height: 400px;
@@ -91,9 +92,14 @@ body {
 
 #second-section {
     display: flex;
-    justify-content: left;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     padding: 50px;
+}
+
+.mapText {
+    font-size: 53px;
 }
 
 .fade-in {
