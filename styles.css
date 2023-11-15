@@ -75,3 +75,9 @@ body {
     align-items: center;
     flex-direction: column;
 }
+
+#second-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
