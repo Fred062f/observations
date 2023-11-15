@@ -12,8 +12,8 @@ body {
 }
 
 #map {
-    width: 800px;
-    height: 500px;
+    width: 1000px;
+    height: 600px;
     border-radius: 25px;
 }
 .info {
@@ -43,11 +43,13 @@ body {
 .chart-container {
     width: 800px;
     height:600px;
+    background-color: white;
 }
 
 .monthly-container {
     width: 800px;
     height:600px;
+    background-color: white;
 }
 
 .title {
