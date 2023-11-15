@@ -92,8 +92,13 @@ body {
 
 #second-section {
     display: flex;
-    justify-content: left;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
+}
+
+.mapText {
+    font-size: 53px;
 }
 
 .fade-in {
