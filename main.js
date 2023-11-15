@@ -6,7 +6,7 @@ function setup() {
     //canvas.parent('second-section')
     canvas.style('z-index', '-1')
     background(0);
-    frameRate(5);
+    frameRate(7);
 }
 
 function draw() {
@@ -14,7 +14,7 @@ function draw() {
     let y = random(document.body.scrollHeight);
     noStroke();
     fill(255);
-    ellipse(x, y, 2, 2);
+    ellipse(x, y, 3, 3);
 }
 
 // Get data
