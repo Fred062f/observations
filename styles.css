@@ -178,7 +178,7 @@ body {
     }
 }
 #witnesses-div {
-    animation: fade-in 20s;
+    animation: fade-in 10s;
 }
 @keyframes fade-in {
     from {
