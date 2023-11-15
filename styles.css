@@ -104,6 +104,20 @@ body {
     padding: 50px;
 }
 
+#third-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#fourth-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .mapText {
     font-size: 40px;
 }
