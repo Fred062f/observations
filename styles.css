@@ -10,7 +10,15 @@ body {
     max-width: 100%;
     max-height: 100%;
 }
+:root {
+    --map-tiles-filter: brightness(0.6) invert(1) contrast(3) hue-rotate(200deg) saturate(0.3) brightness(0.7);
+}
 
+@media (prefers-color-scheme: dark) {
+    .map-tiles {
+        filter:var(--map-tiles-filter, none);
+    }
+}
 #map {
     width: 1000px;
     height: 600px;
@@ -173,7 +181,7 @@ body {
     }
 }
 #witnesses-div {
-    animation: fade-in 20s;
+    animation: fade-in 10s;
 }
 @keyframes fade-in {
     from {
