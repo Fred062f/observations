@@ -28,8 +28,9 @@ let ufo = L.icon({
     iconSize:     [35, 35], // size of the icon
 });
 
-L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+L.tileLayer('https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+    className: 'map-tiles'
 }).addTo(map);
 
 for (let sights of data) {
