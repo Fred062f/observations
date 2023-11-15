@@ -1,7 +1,7 @@
 // P5.JS background
 function setup() {
     let canvas = createCanvas(window.innerWidth, document.body.scrollHeight);
-    canvas.position(0, 0);
+    canvas.position(0, 0)
     canvas.parent('p5')
     //canvas.parent('second-section')
     canvas.style('z-index', '-1')
