@@ -2,7 +2,7 @@
 function setup() {
     canvas = createCanvas(window.innerWidth, window.innerHeight);
     canvas.position(0, 0)
-    canvas.parent('first-div')
+    canvas.parent('first-section')
     canvas.style('z-index', '-1')
     background(0);
     frameRate(5);

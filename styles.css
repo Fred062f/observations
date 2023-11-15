@@ -55,6 +55,7 @@ body {
     display: flex;
     justify-content: flex-end;
     width: 500px;
+    color: white;
 }
 .witnesses {
     font-style: italic;
@@ -72,7 +73,7 @@ body {
     flex-direction: column;
 }
 
-.flex-container div {
+.flex-container section {
     border: 1px solid black;
     height: 100vh;
 }

@@ -29,21 +29,23 @@
 </head>
 <body>
     <div class="flex-container">
-        <div id="first-div">
+        <section id="first-section">
             <h1 class="title">Har Du Også Set En UFO?</h1>
-        </div>
-        <div></div>
-        <div></div>
-        <div></div>
+            <div class="witnesses-div">
+                <span class="witnesses">8805</span>
+                <span class="witnesses-text">Danske Vidner siden 1970</span>
+            </div>
+        </section>
+        <section>
+            <div class="chart-container">
+                <canvas id="myChart"></canvas>
+            </div>
+        </section>
+        <section>
+            <div id="map"></div>
+        </section>
+        <section></section>
     </div>
-<div class="witnesses-div">
-    <span class="witnesses">8805</span>
-    <span class="witnesses-text">Danske Vidner siden 1970</span>
-</div>
-<div class="chart-container">
-    <canvas id="myChart"></canvas>
-</div>
-<div id="map"></div>
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script src="data.js"></script>
 <script src="main.js"></script>
