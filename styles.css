@@ -44,6 +44,11 @@ body {
     height:600px;
 }
 
+.monthly-container {
+    width: 800px;
+    height:600px;
+}
+
 .title {
     font-size: 100px;
     color: white;
