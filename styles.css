@@ -48,6 +48,19 @@ body {
     color: white;
 
 }
+.navigation li {
+    padding: 15px 25px;
+    text-align: center;
+    color: white;
+    background-color: lightseagreen;
+    margin: 0;
+    font-family: sans-serif;
+    list-style-type: none;
+}
+.navigation li:hover {
+    background-color: #777777;
+    color: #ffffff;
+}
 
 #witnesses-div {
     color: white;
