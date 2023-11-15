@@ -1,8 +1,8 @@
 // P5.JS background
 function setup() {
-    let canvas = createCanvas(window.innerWidth, window.innerHeight);
+    let canvas = createCanvas(window.innerWidth, document.body.scrollHeight);
     canvas.position(0, 0)
-    canvas.parent('first-section')
+    canvas.parent('p5')
     //canvas.parent('second-section')
     canvas.style('z-index', '-1')
     background(0);
@@ -11,7 +11,7 @@ function setup() {
 
 function draw() {
     let x = random(windowWidth);
-    let y = random(windowHeight);
+    let y = random(document.body.scrollHeight);
     noStroke();
     fill(255);
     ellipse(x, y, 2, 2);
