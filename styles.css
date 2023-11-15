@@ -44,28 +44,19 @@ body {
 }
 
 .title {
-    display:flex;
-    justify-content: center;
-    font-size: 65px;
+    font-size: 100px;
     color: white;
 
 }
 
 .witnesses-div {
-    display: flex;
-    justify-content: flex-end;
-    width: 500px;
     color: white;
+    font-size: 53px;
 }
+
 .witnesses {
-    font-style: italic;
-    font-size: 150px;
     color: firebrick;
-    text-decoration: underline;
-}
-.witnesses-text {
-    font-style: italic;
-    font-size: 50px;
+    font-weight: bold;
 }
 
 .flex-container {
@@ -76,4 +67,11 @@ body {
 .flex-container section {
     border: 1px solid black;
     height: 100vh;
+}
+
+#first-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
