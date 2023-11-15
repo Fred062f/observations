@@ -2,14 +2,15 @@
 function setup() {
     canvas = createCanvas(window.innerWidth, window.innerHeight);
     canvas.position(0, 0)
+    canvas.parent('section-one')
     canvas.style('z-index', '-1')
     background(0);
-    frameRate(1);
+    frameRate(2);
 }
 
 function draw() {
-    var x = random(windowWidth);
-    var y = random(windowHeight);
+    let x = random(windowWidth);
+    let y = random(windowHeight);
     noStroke();
     fill(255);
     ellipse(x, y, 2, 2);
