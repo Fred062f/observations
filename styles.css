@@ -52,12 +52,14 @@ body {
     width: 800px;
     height:600px;
     background-color: white;
+    border-radius: 20px;
 }
 
 .monthly-container {
     width: 800px;
     height:600px;
     background-color: white;
+    border-radius: 20px;
 }
 
 .title {
