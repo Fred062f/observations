@@ -60,6 +60,7 @@ body {
 #witnesses-div {
     color: white;
     font-size: 53px;
+    margin-top: 50px;
 }
 
 .witnesses {
@@ -108,6 +109,8 @@ body {
 
 .mapText {
     font-size: 40px;
+    color: white;
+    margin-top: 50px;
     color: white;
 }
 
@@ -161,3 +164,25 @@ body {
     100% {
         opacity:1;
     }}
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+#witnesses-div {
+    animation: fade-in 20s;
+}
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+h1 {
+    animation: fade-in 3s;
+}
