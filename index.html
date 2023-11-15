@@ -31,6 +31,14 @@
     <div class="flex-container">
         <section id="first-section">
             <h1 class="title">Har du også set en UFO?</h1>
+            <nav class="navigation">
+                <ul>
+                    <li><a href="#witnesses-div">Witnesses</a></li>
+                    <li><a href="#map">Interactive map</a></li>
+                    <li><a href="#myChart">Observations over time</a></li>
+                    <li><a href="#monthlyObservationsChart">Monthly observations</a></li>
+                </ul>
+            </nav>
             <style>
                 @keyframes fade-in {
                     from {
@@ -45,7 +53,7 @@
                 }
             </style>
 
-            <div class="witnesses-div">
+            <div id="witnesses-div">
                 <style>
                     @keyframes fade-in {
                         from {
@@ -55,8 +63,8 @@
                             opacity: 1;
                         }
                     }
-                    .witnesses-div {
-                        animation: fade-in 15s;
+                    #witnesses-div {
+                        animation: fade-in 20s;
                     }
                 </style>
                 <span>Så er du en del af</span>
@@ -66,6 +74,7 @@
         </section>
         <section id="second-section">
             <div id="map"></div>
+            <span class="mapText">Se for dig selv, om der har været en UFO i din by</span>
         </section>
         <section>
             <div class="chart-container">
