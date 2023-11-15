@@ -2,10 +2,10 @@
 function setup() {
     canvas = createCanvas(window.innerWidth, window.innerHeight);
     canvas.position(0, 0)
-    canvas.parent('section-one')
+    canvas.parent('first-div')
     canvas.style('z-index', '-1')
     background(0);
-    frameRate(2);
+    frameRate(5);
 }
 
 function draw() {
