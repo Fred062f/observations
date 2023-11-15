@@ -1,6 +1,6 @@
 // P5.JS background
 function setup() {
-    canvas = createCanvas(window.innerWidth, window.innerHeight);
+    let canvas = createCanvas(window.innerWidth, window.innerHeight);
     canvas.position(0, 0)
     canvas.parent('first-section')
     canvas.style('z-index', '-1')
