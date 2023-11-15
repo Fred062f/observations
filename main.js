@@ -104,7 +104,7 @@ function animateWitnesses(obj, start, end, duration) {
 }
 
 const obj = document.querySelector(".witnesses");
-animateWitnesses(obj, 0, 8805, 3000);
+animateWitnesses(obj, 0, 8805, 5000);
 
 //Månedlige observationer barchart
 monthlyObservations = JSON.parse(monthlyObservations);
