@@ -57,7 +57,7 @@ body {
 
 .monthly-container {
     width: 800px;
-    height:600px;
+    height:400px;
     background-color: white;
     border-radius: 20px;
 }
@@ -121,6 +121,10 @@ body {
     font-size: 40px;
     color: white;
     margin-top: 50px;
+    color: white;
+}
+
+.beretninger {
     color: white;
 }
 
