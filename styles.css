@@ -107,6 +107,8 @@ body {
 
 .mapText {
     font-size: 40px;
+    color: white;
+    margin-top: 50px;
 }
 
 .fade-in {
