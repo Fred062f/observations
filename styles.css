@@ -44,6 +44,11 @@ body {
     height:600px;
 }
 
+.monthly-container {
+    width: 800px;
+    height:600px;
+}
+
 .title {
     font-size: 100px;
     color: white;
@@ -66,6 +71,7 @@ body {
 #witnesses-div {
     color: white;
     font-size: 53px;
+    margin-top: 50px;
 }
 
 .witnesses {
@@ -99,7 +105,7 @@ body {
 }
 
 .mapText {
-    font-size: 53px;
+    font-size: 40px;
 }
 
 .fade-in {
