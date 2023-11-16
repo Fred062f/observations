@@ -175,3 +175,5 @@ function animateWitnesses(obj, start, end, duration) {
 
 const obj = document.querySelector(".row-container h2 span");
 animateWitnesses(obj, 0, 8805, 5000);
+
+// .....
