@@ -51,14 +51,14 @@ body {
 .chart-container {
     width: 800px;
     height:600px;
-    background-color: white;
+    background-color: midnightblue;
     border-radius: 20px;
 }
 
 .monthly-container {
     width: 800px;
     height:400px;
-    background-color: white;
+    background-color: midnightblue;
     border-radius: 20px;
 }
 

@@ -53,14 +53,23 @@ const chart = new Chart(ctx, {
         datasets: [{
             label: '# of Observations',
             data: counts,
-            borderWidth: 1
-        }]
+            borderWidth: 1,
+
+}],
     },
     options: {
         scales: {
             y: {
                 beginAtZero: true,
-            }
+                grid: {
+                    display: false
+                }
+            },
+            x: {
+                grid: {
+                    display: false
+                }
+            },
         },
         legend: {
             reverse: false
@@ -132,7 +141,15 @@ const monthlyObservationsBarChart = new Chart(monthlyObservationsCtx, {
     options: {
         scales: {
             y: {
-                beginAtZero: true
+                beginAtZero: true,
+                grid: {
+                    display: false
+                }
+            },
+            x: {
+                grid: {
+                    display: false
+                },
             }
         }
     }
