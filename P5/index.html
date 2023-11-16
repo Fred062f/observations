@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ufo Observations</title>
+    <link rel="shortcut icon" type="image/x-icon" href="docs/images/favicon.ico"/>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css" integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ==" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js" integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ==" crossorigin=""></script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.8.0/lib/p5.js"></script>
+</head>
+<body>
+    <div class="row-container">
+        <div id="map"></div>
+        <h1>DO UFOs EXIST?</h1>
+        <h2><span>8805</span> People Thinks So</h2>
+        <p>Zoom In On The Map To Find Out If A UFO Has Visited Your City</p>
+        <div class="column-container">
+            <div class="chart-container">
+                <canvas id="myChart"></canvas>
+                <h3>Number of UFO observations since 1991</h3>
+                <p>Since 1991 there has been a total of 4266 UFO sightings registered.</p>
+            </div>
+            <div class="monthly-container">
+                <canvas id="monthlyObservationsChart"></canvas>
+                <h3>Visits from space grouped in months</h3>
+                <p>Aliens prefer the cold climate of January.</p>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="data.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

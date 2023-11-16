@@ -1,6 +1,6 @@
 // P5.JS background
 function setup() {
-    let canvas = createCanvas(window.innerWidth, document.body.scrollHeight);
+    let canvas = createCanvas(window.innerWidth, document.body.clientHeight);
     canvas.position(0, 0)
     canvas.parent('p5')
     //canvas.parent('second-section')
