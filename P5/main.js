@@ -71,6 +71,18 @@ for (let sights of data) {
             "De virkede til at være trekantet, eller ligne vores fly. Retning vest syd vest.\n" +
             "Det så ud som om, de havde kraftig varmepåvirkning i snuden som lidt mindre end, når en meteor bryder ind i atmosfæren.");
     }
+    else if (sights.latitude === 55.7024  && sights.longitude === 12.5792) {
+        L.marker([sights.latitude, sights.longitude],{icon: redUfo}).addTo(map).bindPopup(`${sights.latitude} ${sights.longitude}`).bindPopup("Sidder i min have da jeg ser to lysende cirkler, der roterer om hinanden. De flyver i en lige linje i høj fart.\n" +
+            "Muligvis en drone, men farten og højden og måden de to cirkler bevægede sig på, virkede ikke som en drone.");
+    }
+    else if (sights.latitude === 55.6977  && sights.longitude === 12.5464) {
+        L.marker([sights.latitude, sights.longitude],{icon: redUfo}).addTo(map).bindPopup(`${sights.latitude} ${sights.longitude}`).bindPopup("Sidder ofte og kigger ud af vinduet i mørke.\n" +
+            "Jeg ser 4 eller 5 lys der flyver tæt på hinanden, så jeg checker FlightRadar appen for at se, hvilke fly der flyver så tætte, men der er ingen fly i området.\n" +
+            "Da de flyver tættere i min retning, kan jeg se, at de er hestesko-agtigt eller U-formet med mange små turkis og røde lys på „vingerne“.\n" +
+            "Jeg begynder at tænke, om det kunne være mærkeligt formet droner, men de snurrer rundt om sig selv i forskellige retninger og har aldrig set en drone langsomt dreje rundt og flyve på hovedet.\n" +
+            "Jeg tænker også om, det kunne være balloner, da det kunne forklare bevægelsen (at skifte positioner med hinanden og snurre rundt), men formen og alle de kraftige lys på dem er ikke normalt for balloner.\n" +
+            "De flyver over min bygning, og så er det væk.");
+    }
     else {
         L.marker([sights.latitude, sights.longitude],{icon: greenufo}).addTo(map).bindPopup(`${sights.latitude} ${sights.longitude}`);
     }
