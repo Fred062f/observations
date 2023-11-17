@@ -19,7 +19,7 @@ function draw() {
 // Leaflet map
 data = JSON.parse(data)
 
-const map = L.map('map').setView([56, 10], 7);
+const map = L.map('map').setView([56.5, 11], 7);
 
 let ufo = L.icon({
     iconUrl: 'https://www.thedataschool.com.au/wp-content/uploads/2018/08/UFO-2235-LightsOff.png',
