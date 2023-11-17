@@ -5,7 +5,7 @@ let array = Array.from(Array(8805+1).keys()).slice(1)
 for (let i = 0; i < array.length; i++) {
     setTimeout(function() {
         span.innerHTML = `${array[i]}`;
-    }, 1000)
+    },i * 0.5)
 }
 
 // Initialize starry background

@@ -101,6 +101,16 @@ ctx.addEventListener("click", (event) => {
 });
 
 //Witnesses number animation
+const span = document.querySelector('.witnesses')
+let array = Array.from(Array(8805+1).keys()).slice(1)
+
+for (let i = 0; i < array.length; i++) {
+    setTimeout(function() {
+        span.innerHTML = `${array[i]}`;
+    },i * 0.5)
+}
+
+/*//Witnesses number animation
 function animateWitnesses(obj, start, end, duration) {
     let startTimestamp = null;
     const step = (timestamp) => {
@@ -115,7 +125,7 @@ function animateWitnesses(obj, start, end, duration) {
 }
 
 const obj = document.querySelector(".witnesses");
-animateWitnesses(obj, 0, 8805, 5000);
+animateWitnesses(obj, 0, 8805, 5000);*/
 
 //Månedlige observationer barchart
 monthlyObservations = JSON.parse(monthlyObservations);
