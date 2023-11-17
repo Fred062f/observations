@@ -153,7 +153,7 @@ const monthlyObservationsBarChart = new Chart(monthlyObservationsCtx, {
         }
     }
 });
-//button (html and css inspiration: https://codepen.io/rdallaire/pen/neMvbX
+//button (css inspiration: https://codepen.io/rdallaire/pen/neMvbX
 //get button
 let topButton = document.querySelector("#top-button");
 
