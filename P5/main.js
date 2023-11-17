@@ -101,7 +101,7 @@ const chart = new Chart(ctx, {
 // Chart
 monthlyObservations = JSON.parse(monthlyObservations);
 
-const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+const monthNames = ["Jan", "Feb", "Mar", "Apr", "Maj", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 const months = monthlyObservations.map(entry => monthNames[entry["MONTH(datetime)"] -1]);
 const observationCount = monthlyObservations.map(entry => entry["COUNT(*)"]);
 
