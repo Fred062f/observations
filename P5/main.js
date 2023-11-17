@@ -1,3 +1,13 @@
+//Witnesses number animation
+const span = document.querySelector('.row-container h2 span')
+let array = Array.from(Array(8805+1).keys()).slice(1)
+
+for (let i = 0; i < array.length; i++) {
+    setTimeout(function() {
+        span.innerHTML = `${array[i]}`;
+    }, 1000)
+}
+
 // Initialize starry background
 function setup() {
     let canvas = createCanvas(window.innerWidth, window.innerHeight);
@@ -21,7 +31,7 @@ data = JSON.parse(data)
 
 const map = L.map('map').setView([56.5, 11], 7);
 
-let ufo = L.icon({
+let greenufo = L.icon({
     iconUrl: 'https://www.thedataschool.com.au/wp-content/uploads/2018/08/UFO-2235-LightsOff.png',
 
     iconSize: [35, 35], // size of the icon
@@ -56,8 +66,13 @@ for (let sights of data) {
             "Set af tre uafhængige grupper med i alt 7 personer. Der foreligger tegninger fra flere observatører. Obs. i Ørkenen på Anholt efter DarkSky arrangement.\n" +
             "Der var et tysk flådefartøj, fregatten Al Aziz, i den pågældende retning ifølge appen MarineTraffic, undervejs Kiel-Wilhelmshafen.");
     }
+    else if (sights.latitude === 56.1537 && sights.longitude === 10.2008) {
+        L.marker([sights.latitude, sights.longitude],{icon: redUfo}).addTo(map).bindPopup(`${sights.latitude} ${sights.longitude}`).bindPopup("Begge to fløj helt parallelt og synkront.\n" +
+            "De virkede til at være trekantet, eller ligne vores fly. Retning vest syd vest.\n" +
+            "Det så ud som om, de havde kraftig varmepåvirkning i snuden som lidt mindre end, når en meteor bryder ind i atmosfæren.");
+    }
     else {
-        L.marker([sights.latitude, sights.longitude],{icon: ufo}).addTo(map).bindPopup(`${sights.latitude} ${sights.longitude}`);
+        L.marker([sights.latitude, sights.longitude],{icon: greenufo}).addTo(map).bindPopup(`${sights.latitude} ${sights.longitude}`);
     }
 }
 
@@ -158,22 +173,3 @@ const monthlyObservationsBarChart = new Chart(monthlyObservationsCtx, {
         },
     }
 });
-
-//Witnesses number animation
-function animateWitnesses(obj, start, end, duration) {
-    let startTimestamp = null;
-    const step = (timestamp) => {
-        if (!startTimestamp) startTimestamp = timestamp;
-        const progress = Math.min((timestamp - startTimestamp) / duration, 1);
-        obj.innerHTML = Math.floor(progress * (end - start) + start);
-        if (progress < 1) {
-            window.requestAnimationFrame(step);
-        }
-    };
-    window.requestAnimationFrame(step);
-}
-
-const obj = document.querySelector(".row-container h2 span");
-animateWitnesses(obj, 0, 8805, 5000);
-
-// .....
