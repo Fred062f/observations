@@ -1,6 +1,7 @@
 html,
 body {
     height: 100%;
+    width: 100%;
     margin: 0;
     scroll-behavior: smooth;
 }
@@ -121,11 +122,6 @@ body {
     font-size: 40px;
     color: white;
     margin-top: 50px;
-    color: white;
-}
-
-.beretninger {
-    color: white;
 }
 
 .fade-in {
@@ -135,6 +131,7 @@ body {
     -o-animation: fadeIn ease 10s;
     -ms-animation: fadeIn ease 10s;
 }
+
 @keyframes fadeIn {
     0% {
         opacity:0;
@@ -202,14 +199,60 @@ h1 {
 }
 
 .beretninger {
-    padding: 25px;
     color: white;
-    display: flex;
-    font-size: 20px;
-    font-weight: bold;
-    flex-wrap: wrap;
+    display: flex; /* Ensures flexbox is being used */
+    flex-direction: column; /* Aligns children vertically */
+    justify-content: center; /* Centers children horizontally */
+    align-items: center; /* Centers children vertically */
+    height: 100%; /* Adjust height as needed */
 }
-#myBtn {
+
+.beretningEt, .beretningTo, .beretningTre {
+    margin-bottom: 150px; /* Space between the bubbles */
+    position: relative;
+    background: darkblue;
+    border-radius: .4em;
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    padding: 20px; /* Adjust as needed for internal spacing */
+}
+
+/* The :after pseudo-elements */
+.beretningEt:after, .beretningTre:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 15%;
+    width: 0;
+    height: 0;
+    border: 20px solid transparent;
+    border-top-color: darkblue;
+    border-bottom: 0;
+    margin-left: -20px;
+    margin-bottom: -20px;
+}
+
+.beretningTo:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 90%;
+    width: 0;
+    height: 0;
+    border: 20px solid transparent;
+    border-top-color: darkblue;
+    border-bottom: 0;
+    margin-left: -20px;
+    margin-bottom: -20px;
+}
+
+.beretningEt p, .beretningTo p, .beretningTre p {
+    margin: 0;
+}
+#top-button {
     display: none;
     position: fixed;
     bottom: 20px;
@@ -227,31 +270,27 @@ h1 {
     -webkit-border-radius: 35px;
     -moz-border-radius: 35px;
     border-radius: 35px;
-    -webkit-transition: all 0.3s linear;
-    -moz-transition: all 0.3s ease;
-    -ms-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    transition: all 0.3s ease;
 }
-#myBtn i {
+#top-button i {
     color: #fff;
     margin: 0;
     position: relative;
     font-size: 19px;
-    -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    -ms-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    transition: all 0.3s ease;
 }
-#myBtn:hover {
+#top-button:hover {
     background: lightslategrey;
 }
-#myBtn:hover i {
+#top-button:hover i {
     color: #fff;
     bottom: 5px;
 }
 
-.beretninger p {
-    border: 1px solid white;
+.afsluttendeSætning {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+    margin: 0;
 }
