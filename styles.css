@@ -209,7 +209,7 @@ h1 {
     font-weight: bold;
     flex-wrap: wrap;
 }
-#myBtn {
+#top-button {
     display: none;
     position: fixed;
     bottom: 20px;
@@ -227,27 +227,17 @@ h1 {
     -webkit-border-radius: 35px;
     -moz-border-radius: 35px;
     border-radius: 35px;
-    -webkit-transition: all 0.3s linear;
-    -moz-transition: all 0.3s ease;
-    -ms-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    transition: all 0.3s ease;
 }
-#myBtn i {
+#top-button i {
     color: #fff;
     margin: 0;
     position: relative;
     font-size: 19px;
-    -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    -ms-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    transition: all 0.3s ease;
 }
-#myBtn:hover {
+#top-button:hover {
     background: lightslategrey;
 }
-#myBtn:hover i {
+#top-button:hover i {
     color: #fff;
     bottom: 5px;
 }
