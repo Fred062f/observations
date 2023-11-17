@@ -123,10 +123,6 @@ body {
     margin-top: 50px;
 }
 
-.beretninger {
-    color: white;
-}
-
 .fade-in {
     animation: fadeIn ease 10s;
     -webkit-animation: fadeIn ease 10s;
@@ -134,6 +130,7 @@ body {
     -o-animation: fadeIn ease 10s;
     -ms-animation: fadeIn ease 10s;
 }
+
 @keyframes fadeIn {
     0% {
         opacity:0;
@@ -201,12 +198,58 @@ h1 {
 }
 
 .beretninger {
-    padding: 25px;
     color: white;
+    display: flex; /* Ensures flexbox is being used */
+    flex-direction: column; /* Aligns children vertically */
+    justify-content: center; /* Centers children horizontally */
+    align-items: center; /* Centers children vertically */
+    height: 100%; /* Adjust height as needed */
+}
+
+.beretningEt, .beretningTo, .beretningTre {
+    margin-bottom: 150px; /* Space between the bubbles */
+    position: relative;
+    background: darkblue;
+    border-radius: .4em;
+    width: 1200px;
     display: flex;
-    font-size: 20px;
-    font-weight: bold;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    padding: 20px; /* Adjust as needed for internal spacing */
+}
+
+/* The :after pseudo-elements */
+.beretningEt:after, .beretningTre:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 15%;
+    width: 0;
+    height: 0;
+    border: 20px solid transparent;
+    border-top-color: darkblue;
+    border-bottom: 0;
+    margin-left: -20px;
+    margin-bottom: -20px;
+}
+
+.beretningTo:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 90%;
+    width: 0;
+    height: 0;
+    border: 20px solid transparent;
+    border-top-color: darkblue;
+    border-bottom: 0;
+    margin-left: -20px;
+    margin-bottom: -20px;
+}
+
+.beretningEt p, .beretningTo p, .beretningTre p {
+    margin: 0;
 }
 #top-button {
     display: none;
@@ -241,6 +284,12 @@ h1 {
     bottom: 5px;
 }
 
-.beretninger p {
-    border: 1px solid white;
+.afsluttendeSætning {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+    margin: 0;
 }
