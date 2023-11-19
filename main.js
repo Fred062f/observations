@@ -1,4 +1,4 @@
-// dashboard.JS background
+// Background using P5.js (Frederik)
 function setup() {
     let canvas = createCanvas(window.innerWidth, document.body.scrollHeight);
     canvas.position(0, 0)
@@ -17,7 +17,7 @@ function draw() {
     ellipse(x, y, 3, 3);
 }
 
-// Get data
+// Leaflet.js map (Frederik)
 data = JSON.parse(data)
 
 const map = L.map('map').setView([56, 10], 6);
@@ -101,10 +101,10 @@ ctx.addEventListener("click", (event) => {
     }
 });
 
-//Witnesses number animation
-const span = document.querySelector('.witnesses')
-let array = Array.from(Array(8805+1).keys()).slice(1)
-
+// Count number of witnesses (Frederik)
+const span = document.querySelector('.witnesses') // Get HTML element
+let array = Array.from(Array(8805+1).keys()).slice(1) // Create an array from 1 to 8805
+// Iterate over the array and update span element
 for (let i = 0; i < array.length; i++) {
     setTimeout(function() {
         span.innerHTML = `${array[i]}`;
