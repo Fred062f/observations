@@ -38,14 +38,14 @@ for (let sights of data) {
 }
 
 
-//observations chart
+//observations chart (Viktor)
 observations = JSON.parse(observations);
-
+//getting the two elements needed from JSON in data.js file
 const labels = observations.map(entry => entry["YEAR(datetime)"]);
 const counts = observations.map(entry => entry["COUNT(*)"]);
-
+//creating chart with html element
 const ctx = document.getElementById('myChart');
-
+//chart clarification and data
 const chart = new Chart(ctx, {
     type: 'line',
     data: {
@@ -87,6 +87,7 @@ const chart = new Chart(ctx, {
         },
     }
 });
+//event listener for popup when datapoint is clicked (viktor)
 ctx.addEventListener("click", (event) => {
     const clickedPoint = chart.getElementsAtEventForMode(event, "point", { intersect: true });
     const datapoint = chart.data.datasets[0].data
@@ -95,7 +96,7 @@ ctx.addEventListener("click", (event) => {
         const index = clickedPoint[0].index;
 
         const clickedData = datapoint[index];
-
+        //alert on screen
         alert(`Number of Observations: ${clickedData}`);
     }
 });
@@ -109,23 +110,6 @@ for (let i = 0; i < array.length; i++) {
         span.innerHTML = `${array[i]}`;
     },i * 0.5)
 }
-
-/*//Witnesses number animation
-function animateWitnesses(obj, start, end, duration) {
-    let startTimestamp = null;
-    const step = (timestamp) => {
-        if (!startTimestamp) startTimestamp = timestamp;
-        const progress = Math.min((timestamp - startTimestamp) / duration, 1);
-        obj.innerHTML = Math.floor(progress * (end - start) + start);
-        if (progress < 1) {
-            window.requestAnimationFrame(step);
-        }
-    };
-    window.requestAnimationFrame(step);
-}
-
-const obj = document.querySelector(".witnesses");
-animateWitnesses(obj, 0, 8805, 5000);*/
 
 //Månedlige observationer barchart
 monthlyObservations = JSON.parse(monthlyObservations);
@@ -164,13 +148,12 @@ const monthlyObservationsBarChart = new Chart(monthlyObservationsCtx, {
         }
     }
 });
-//button (css inspiration: https://codepen.io/rdallaire/pen/neMvbX
+//button (viktor) (css inspiration: https://codepen.io/rdallaire/pen/neMvbX)
 //get button
 let topButton = document.querySelector("#top-button");
 
-// When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function() {scrollFunction()};
-
+// When the user scrolls down 20px from the top of the document, show the button
 function scrollFunction() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
         topButton.style.display = "block";
