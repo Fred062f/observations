@@ -1,4 +1,4 @@
-// P5.JS background
+// dashboard.JS background
 function setup() {
     let canvas = createCanvas(window.innerWidth, document.body.scrollHeight);
     canvas.position(0, 0)
