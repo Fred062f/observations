@@ -1,4 +1,4 @@
-//Witnesses number animation
+// Count number of witnesses (Frederik)
 const span = document.querySelector('.row-container h2 span')
 let array = Array.from(Array(8805+1).keys()).slice(1)
 
@@ -8,7 +8,7 @@ for (let i = 0; i < array.length; i++) {
     },i * 0.5)
 }
 
-// Initialize starry background
+// Initialize starry background using P5.js (Frederik)
 function setup() {
     let canvas = createCanvas(window.innerWidth, window.innerHeight);
     canvas.position(0, 0)
@@ -26,7 +26,7 @@ function draw() {
     ellipse(x, y, 3, 3);
 }
 
-// Leaflet map
+// Leaflet map (Frederik)
 data = JSON.parse(data)
 
 const map = L.map('map').setView([56.5, 11], 7);
@@ -55,6 +55,7 @@ L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
     maxZoom: 20
 }).addTo(map);
 
+// Add storytelling to map
 for (let sights of data) {
     if (sights.latitude === 55.8403 && sights.longitude === 12.4288) {
         L.marker([sights.latitude, sights.longitude],{icon: redUfo}).addTo(map).bindPopup(`${sights.latitude} ${sights.longitude}`).bindPopup("Min mand og jeg kommer kørende fra Allerød ad kongevejen, da vi ser en ting hænge i luften og skiftevis blinke 3 hvide lys i venstre side 3 røde lys i højest side, mens den holder stille i luften. Da vi kommer nærmere, begynder den at flyve mod Allerød over Høvelte. Pludselig kommer der en flyvende og holder stille i luften over McDonald's. Vi kører ind på tanken overfor for at se, hvad det er der hænger i luften. Efter ca. 1 min.begynder den at flyve samme retning som den første. De var ca. 200 - 300 meter oppe i luften.");
@@ -154,7 +155,7 @@ const monthlyObservationsBarChart = new Chart(monthlyObservationsCtx, {
                 'rgba(201, 203, 207, 0.2)',
                 'rgba(201, 203, 207, 0.2)',
                 'rgba(201, 203, 207, 0.2)'
-            ], // Customizable color
+            ], // Highlight January (Frederik)
             borderColor: [
                 'rgba(54, 162, 235, 1)',
                 'rgba(201, 203, 207, 0.2)',
@@ -168,7 +169,7 @@ const monthlyObservationsBarChart = new Chart(monthlyObservationsCtx, {
                 'rgba(201, 203, 207, 0.2)',
                 'rgba(201, 203, 207, 0.2)',
                 'rgba(201, 203, 207, 0.2)'
-            ], // Customizable color
+            ], // Customize border color
             borderWidth: 1
         }]
     },
