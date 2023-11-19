@@ -5,12 +5,14 @@ body {
     margin: 0;
     scroll-behavior: smooth;
 }
+/*map container*/
 .leaflet-container {
     height: 400px;
     width: 600px;
     max-width: 100%;
     max-height: 100%;
 }
+/*map colors and options*/
 :root {
     --map-tiles-filter: brightness(0.6) invert(1) contrast(3) hue-rotate(200deg) saturate(0.3) brightness(0.7);
 }
@@ -25,30 +27,7 @@ body {
     height: 600px;
     border-radius: 25px;
 }
-.info {
-    padding: 6px 8px;
-    font: 14px/16px Arial, Helvetica, sans-serif;
-    background: white;
-    background: rgba(255, 255, 255, 0.8);
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
-}
-.info h4 {
-    margin: 0 0 5px;
-    color: #777;
-}
-.legend {
-    text-align: left;
-    line-height: 18px;
-    color: #555;
-}
-.legend i {
-    width: 18px;
-    height: 18px;
-    float: left;
-    margin-right: 8px;
-    opacity: 0.7;
-}
+/*charts*/
 .chart-container {
     width: 800px;
     height:600px;
@@ -62,7 +41,7 @@ body {
     background-color: midnightblue;
     border-radius: 20px;
 }
-
+/*title and subtitle*/
 .title {
     font-size: 100px;
     color: white;
@@ -78,7 +57,7 @@ body {
     color: firebrick;
     font-weight: bold;
 }
-
+/*whole site in flex for background*/
 .flex-container {
     display: flex;
     flex-direction: column;
@@ -123,7 +102,7 @@ body {
     color: white;
     margin-top: 50px;
 }
-
+/*fade-in keywords and animation*/
 .fade-in {
     animation: fadeIn ease 10s;
     -webkit-animation: fadeIn ease 10s;
@@ -197,7 +176,7 @@ body {
 h1 {
     animation: fade-in 3s;
 }
-
+/*beretninger tags at the bottom of the website*/
 .beretninger {
     color: white;
     display: flex;
@@ -251,6 +230,7 @@ h1 {
 .beretningEt p, .beretningTo p, .beretningTre p {
     margin: 0;
 }
+/*button to take the user to the top*/
 #top-button {
     display: none;
     position: fixed;
