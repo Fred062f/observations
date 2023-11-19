@@ -111,15 +111,18 @@ for (let i = 0; i < array.length; i++) {
     },i * 0.5)
 }
 
-//Månedlige observationer barchart
+// Monthly Observations Bar Chart (Nikolaus)
 monthlyObservations = JSON.parse(monthlyObservations);
 
+// Mapping month names and observation counts from the JSON data
 const monthNames = ["Jan", "Feb", "Mar", "Apr", "Maj", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 const months = monthlyObservations.map(entry => monthNames[entry["MONTH(datetime)"] -1]);
 const observationCount = monthlyObservations.map(entry => entry["COUNT(*)"]);
 
+// Retrieving the canvas element for the monthly observations bar chart
 const monthlyObservationsCtx = document.querySelector('#monthlyObservationsChart').getContext('2d');
 
+// Creating the monthly observations bar chart using Chart.js
 const monthlyObservationsBarChart = new Chart(monthlyObservationsCtx, {
     type: "bar",
     data: {
@@ -148,6 +151,7 @@ const monthlyObservationsBarChart = new Chart(monthlyObservationsCtx, {
         }
     }
 });
+
 //button (viktor) (css inspiration: https://codepen.io/rdallaire/pen/neMvbX)
 //get button
 let topButton = document.querySelector("#top-button");

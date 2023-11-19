@@ -200,15 +200,15 @@ h1 {
 
 .beretninger {
     color: white;
-    display: flex; /* Ensures flexbox is being used */
-    flex-direction: column; /* Aligns children vertically */
-    justify-content: center; /* Centers children horizontally */
-    align-items: center; /* Centers children vertically */
-    height: 100%; /* Adjust height as needed */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
 
 .beretningEt, .beretningTo, .beretningTre {
-    margin-bottom: 150px; /* Space between the bubbles */
+    margin-bottom: 150px;
     position: relative;
     background: darkblue;
     border-radius: .4em;
@@ -217,10 +217,9 @@ h1 {
     flex-direction: column;
     align-items: center;
     color: white;
-    padding: 20px; /* Adjust as needed for internal spacing */
+    padding: 20px;
 }
 
-/* The :after pseudo-elements */
 .beretningEt:after, .beretningTre:after {
     content: '';
     position: absolute;
@@ -271,15 +270,18 @@ h1 {
     -moz-border-radius: 35px;
     border-radius: 35px;
 }
+
 #top-button i {
     color: #fff;
     margin: 0;
     position: relative;
     font-size: 19px;
 }
+
 #top-button:hover {
     background: lightslategrey;
 }
+
 #top-button:hover i {
     color: #fff;
     bottom: 5px;
